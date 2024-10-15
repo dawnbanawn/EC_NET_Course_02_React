@@ -1,7 +1,25 @@
 import React from 'react'
+import { useState } from 'react';
 import main_shape from "./assets/images/main_shape.png"
-
+import { useMediaQuery } from "react-responsive";
+import useLocalStorage from 'use-local-storage'
 const Navbar = () => {
+
+    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+    const switchTheme = () => {
+        
+        const newTheme = theme === 'light' ? 'dark': 'light';
+        setTheme(newTheme)
+        if (theme == 'dark'){
+        document.documentElement.setAttribute('data-theme', 'dark');
+
+        } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+
+        }
+    }
+
   return (
     <nav id="navbar">
           <div id="leftNav">
@@ -18,6 +36,7 @@ const Navbar = () => {
               <span> Dark Mode </span>
               <div className="form-check form-switch">
                 <input
+                onClick={() => switchTheme()}
                   className="form-check-input"
                   type="checkbox"
                   id="flexSwitchCheckDefault"

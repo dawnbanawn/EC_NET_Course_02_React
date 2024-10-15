@@ -29,20 +29,20 @@ h1, h2, h3, h4 {
   width: 80vw;
 }
 #page01{
-  background-color: rgb(230, 224, 224);
+  background-color: var(--background);
   width: 80vw;
   height: 100%;
 
 }
 
 #navbar{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background);
   width: 80vw;
   height: 50px;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  background-color: red;
+  
 
 }
 #leftNav{
@@ -646,3 +646,24 @@ width: 80vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+@media (prefers-color-scheme: dark) {
+  p {
+    color: #ff0000;
+  }
+}
+
+:root {
+  --background: rgb(255, 255, 255);
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+[data-theme='dark'] {
+  --background: rgb(0, 0, 0);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+#heroRight {
+  background-color: var(--background);
+}
