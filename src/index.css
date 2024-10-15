@@ -1,6 +1,7 @@
 :root {
   --blueBG: #f0f7fe;
   --white: #ffffff;
+
 }
 html{
   margin: 0;
@@ -14,28 +15,34 @@ h1, h2, h3, h4 {
 
 /* PAGE 01 */
 
-#main{
+.main{
   margin: 0;
-  height: 100%;
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
 }
 .pages{    
   height: 100%;
-  margin: auto;
+  width: 80vw;
 }
 #page01{
   background-color: rgb(230, 224, 224);
-  width: 70%;
+  width: 80vw;
+  height: 100%;
 
 }
 
 #navbar{
   background-color: rgb(255, 255, 255);
-  width: 70vw;
+  width: 80vw;
   height: 50px;
   display: flex;
   justify-content: space-between;
   position: absolute;
+  background-color: red;
 
 }
 #leftNav{
@@ -159,7 +166,7 @@ height: 10px;
 
 #page02{
   background-color: rgb(255, 255, 255);
-  width: 70%;
+  width: 80vw;
   margin-bottom: 50px;
 
 }
@@ -244,10 +251,10 @@ height: 10px;
 
 #page03{
   background-color: var(--blueBG);
-  width: 100%;
+  width: 80vw;
 }
 #page03div{
-  width: 70%;
+  width: 100%;
 
   margin: auto;
 }
@@ -284,7 +291,7 @@ height: 10px;
 /* PAGE 04 */
 
 #page04{
-  width: 70%;
+  width: 80vw;
 
 }
 #page04TopDiv{
@@ -373,6 +380,7 @@ margin-right: 10px;
   height: 600px;
   display: flex;
   align-items: center;
+  width: 80vw;
 
 }
 .page05card{
@@ -387,7 +395,7 @@ margin-right: 10px;
   height: 400px;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
   margin: auto;
 
 }
@@ -418,9 +426,9 @@ margin-right: 10px;
 
 #page06{
   background-color: rgb(255, 255, 255);
-  height: 800px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  width: 80vw;
 
 }
 
@@ -428,8 +436,10 @@ margin-right: 10px;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
   margin: auto;
+  margin-top: 100px;
+  height: 900px;
 
 }
 .page06cardsDiv{
@@ -492,14 +502,14 @@ margin-right: 10px;
 
 #page07{
   height: 200px;
-
+width: 80vw;
 
 }
 #page07div{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
   height: 150px;
   margin: auto;
   background-color: var(--blueBG);
@@ -549,14 +559,14 @@ margin-right: 10px;
 
 #page08{
   height: 50px;
-
+width: 80vw;
 
 }
 #page08div{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
   height: 50px;
 
   margin: auto;
@@ -578,6 +588,9 @@ margin-right: 10px;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+
+  
+
 }
 
 .active, .accordion:hover {
@@ -611,17 +624,21 @@ margin-right: 10px;
   rotate: -90deg;
   color: rgb(255, 255, 255);
   background-color: rgb(90, 90, 200);
+  margin-left: 10px;
 
 }
 
 .panel {
+
   padding: 0 18px;
   border-radius: 10px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
+  /* border: 1px solid grey; */
   transition: max-height 0.2s ease-out;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  clip-path: inset(0px -10px -10px -10px);
+  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 .accordion{
   margin-top: 20px;
