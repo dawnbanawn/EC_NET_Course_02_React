@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import main_shape from "./assets/images/main_shape.png"
 const Navbar = () => {
 
@@ -17,14 +18,18 @@ const Navbar = () => {
     }
 
   return (
+    
     <nav id="navbar">
           <div id="leftNav">
             <div id="navLogo">
               <img src={main_shape} alt="" />
               <h5><strong>Silicon</strong></h5>
             </div>
+            
             <div id="navFeatures">
-              <p>Features</p>
+            <Link to="/">Features</Link>
+            <Link to="/contact">Contact</Link>
+
             </div>
           </div>
           <div id="rightNav">

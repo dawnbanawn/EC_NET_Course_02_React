@@ -4,12 +4,10 @@ import googleplay from "./assets/images/googleplay.png"
 import appstore from "./assets/images/appstore.png"
 import chevron from "./assets/images/chevron.png"
 import zeroone from "./assets/images/01.png"
-import Navbar from './navbar'
 
 const Page01 = () => {
   return (
     <div id="page01" className="pages">
-        <Navbar/>
         <div id="hero">
           <div id="heroLeft">
             <div id="heroLeftContainer">
