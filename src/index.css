@@ -7,6 +7,7 @@ html{
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
+  
 
 }
 h1, h2, h3, h4 {
@@ -22,6 +23,8 @@ h1, h2, h3, h4 {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  color: var(--text-primary);
+  background-color: var(--background_v1);
 
 }
 .pages{    
@@ -29,14 +32,14 @@ h1, h2, h3, h4 {
   width: 80vw;
 }
 #page01{
-  background-color: var(--background);
+  background-color: var(--background_v1);
   width: 80vw;
   height: 100%;
 
 }
 
 #navbar{
-  background-color: var(--background);
+  background-color: var(--background_v1);
   width: 80vw;
   height: 50px;
   display: flex;
@@ -52,8 +55,10 @@ h1, h2, h3, h4 {
 #navLogo{
   display: flex;
   align-items: center;
+  
 
 }
+
 #navLogo h5{
   height: 20px;
   margin-left: 10px;
@@ -101,20 +106,23 @@ height: 10px;
 }
 #heroLeft{
   width: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v1);
   height: 100vh;
   display: flex;
   align-items: center;
 }
 #heroLeftContainer{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v1);
   height: 50%;
-
+  
+}
+#heroLeftContainer p{
+  color: var(--text-secondary);
   
 }
 #heroRight{
   width: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v1);
   height: 100vh;
   display: flex;
   align-items: flex-end;
@@ -137,6 +145,8 @@ height: 10px;
 }
 #heroLeftLower img{
   margin-left: 10px;
+  border: 1px solid var(--text-secondary);
+  border-radius: 10px;
 }
 
 #nextButtonDiv{
@@ -148,16 +158,32 @@ height: 10px;
   margin-bottom: 50px;
 }
 #nextButton{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v1);
   height: 50px;
   width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   margin-right: 10px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid var(--text-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
+#nextButton p{
+  font-size: 22px;
+  text-align:center; 
+  vertical-align: middle;
+  width: 29px;
+  margin: auto;
+  margin-bottom: 10px;
+  
+
+
+}
+
 #nextButtonDiv p{
   margin-left: 10px;
 }
@@ -165,7 +191,7 @@ height: 10px;
 /* PAGE 02 */
 
 #page02{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 80vw;
   margin-bottom: 50px;
 
@@ -176,7 +202,7 @@ height: 10px;
   display: flex;
   justify-content: space-between;
   height: 150px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   align-items: flex-end;
   margin-bottom: 50px;
 
@@ -184,15 +210,17 @@ height: 10px;
 }
 .page02Logos img{
   width: 100%;
+  border: 1px solid var(--text-secondary);
+  border-radius: 10px;
 
 }
 #page02LowerContainer{
   width: 100%;
-  background-color: grey;
+  background-color: var(--background_v2);
   display: flex;
 }
 #page02LowerLeft{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 50%;
   
 }
@@ -202,30 +230,30 @@ height: 10px;
   margin-left: 50px;
 }
 #page02LowerRightContainer{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 50%;
 }
 #page02LowerRightBottom{
   display: flex;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
 }
 #page02IconsLeft{
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 50%;
 }
 #page02IconsRight{
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 50%;
 }
 .page02Card{
   display: flex;
   width: 250px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
 }
 .page02Card p{
   font-size: 12px;
@@ -236,7 +264,7 @@ height: 10px;
 .page01IconImage{
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,11 +325,11 @@ height: 10px;
 #page04TopDiv{
   width: 100%;
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
 }
 #page04TopLeft{
   width: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,7 +350,7 @@ height: 10px;
 }
 #page04TopRight{
   width: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
 }
 #page04TopRight img{
   width: 100%;
@@ -335,7 +363,7 @@ height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-primary);
   border-radius: 5px;
 
   margin-top: 20px;
@@ -347,14 +375,14 @@ margin-right: 10px;
 }
 
 #page04BottomLeft{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 50%;
 }
 #page04BottomLeft img{
   width: 100%;
 }
 #page04BottomRight{    
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   width: 50%;
   display: flex;
   justify-content: center;
@@ -363,7 +391,7 @@ margin-right: 10px;
 #page04LowerDiv{
   display: flex;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
 }
 #page04cards{
   display: flex;
@@ -386,7 +414,7 @@ margin-right: 10px;
 .page05card{
   width: 350px;
   height: 350px;
-  background-color: white;
+  background-color: var(--background_card);
   border-radius: 10px;
   margin: 10px;
 }
@@ -425,7 +453,7 @@ margin-right: 10px;
 /* PAGE 06 */
 
 #page06{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background_v2);
   display: flex;
   align-items: flex-start;
   width: 80vw;
@@ -546,7 +574,7 @@ width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-primary);
   border-radius: 5px;
 
 }
@@ -570,16 +598,16 @@ width: 80vw;
   height: 50px;
 
   margin: auto;
-  background-color: rgb(255, 255, 255);
-  color: rgba(0, 0, 0, 0.5);
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 
 
 /* Accordion */
 
 .accordion {
-  background-color: #ffffff;
-  color: #444;
+  background-color: var(--background_card);
+  color: var(--text-primary);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -588,22 +616,21 @@ width: 80vw;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
-
   
 
 }
 
 .active, .accordion:hover {
-  background-color: #ffffff;
+  background-color: var(--background_card);
 }
 
 .accordion:after {
   /* content: '\25B2';
   padding-bottom: 5px; */
-  color: #777;
+  color: var(--text-primary);
   font-weight: bold;
   float: right;
-  background-color: rgb(214, 210, 210);
+  background-color: var(--background_card);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -622,7 +649,7 @@ width: 80vw;
   /* content: "\25BC"; */
   content: '\003c';
   rotate: -90deg;
-  color: rgb(255, 255, 255);
+  color: var(--text-primary);
   background-color: rgb(90, 90, 200);
   margin-left: 10px;
 
@@ -632,7 +659,7 @@ width: 80vw;
 
   padding: 0 18px;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--background_card);
   max-height: 0;
   overflow: hidden;
   /* border: 1px solid grey; */
@@ -646,24 +673,25 @@ width: 80vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media (prefers-color-scheme: dark) {
-  p {
-    color: #ff0000;
-  }
-}
+
 
 :root {
-  --background: rgb(255, 255, 255);
+  --background_1: rgb(255, 255, 255);
+  --background_2: rgb(255, 255, 255);
+  --background_card: rgb(255, 255, 255);
+
+  --blueBG: #f0f7fe;
   --text-primary: black;
-  --text-secondary: royalblue;
+  --text-secondary: rgb(255, 255, 255);
   --accent: purple;
 }
 [data-theme='dark'] {
-  --background: rgb(0, 0, 0);
+  --background_v1: rgb(10, 1, 33);
+  --background_v2: rgb(6, 0, 11);
+  --background_card: rgb(35, 33, 36);
+
+  --blueBG: rgb(10, 1, 33);
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;
-}
-#heroRight {
-  background-color: var(--background);
 }

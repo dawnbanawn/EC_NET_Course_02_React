@@ -1,22 +1,18 @@
 import React from 'react'
 import { useState } from 'react';
 import main_shape from "./assets/images/main_shape.png"
-import { useMediaQuery } from "react-responsive";
-import useLocalStorage from 'use-local-storage'
 const Navbar = () => {
 
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+    // hook for keeping track of light/dark theme
+    const [theme, setTheme] = useState('light')
+    // Function called by toggle to change data-theme variables in index.css
     const switchTheme = () => {
-        
         const newTheme = theme === 'light' ? 'dark': 'light';
         setTheme(newTheme)
-        if (theme == 'dark'){
+        if (newTheme == 'dark'){
         document.documentElement.setAttribute('data-theme', 'dark');
-
         } else {
         document.documentElement.setAttribute('data-theme', 'light');
-
         }
     }
 

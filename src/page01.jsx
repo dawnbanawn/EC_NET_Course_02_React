@@ -28,7 +28,8 @@ const Page01 = () => {
             </div>
             <div id="nextButtonDiv">
               <div id="nextButton">
-                <img src={chevron} alt="" />
+                <p id='varrow'>v</p>
+                {/* <img src={chevron} alt="" /> */}
               </div>
               <p>Discover more</p>
             </div>
