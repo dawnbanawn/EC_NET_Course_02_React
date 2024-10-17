@@ -3,6 +3,7 @@ import bell from "./assets/images/bell.png";
 import { useEffect } from "react";
 
 const Page07 = () => {
+  // post request with the input value
   async function fetchMovies() {
     let url = "https://win24-assignment.azurewebsites.net/api/forms/subscribe";
     const requestOptions = {
@@ -11,11 +12,10 @@ const Page07 = () => {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email: "bli@blo.com" }),
+      body: JSON.stringify({ email: document.getElementById("inputText").value }),
     };
     const response = await fetch(url, requestOptions);
-    // waits until the request completes...
-    //console.log(response.status);
+
     if (response.status == 200) {
       window.alert("You are subscribed!");
     } else {
@@ -23,6 +23,7 @@ const Page07 = () => {
     }
   }
 
+  // Button that validates the input value before calling fetch function.
   function subButton() {
     let inputValue = document.getElementById("inputText").value;
 
@@ -38,20 +39,10 @@ const Page07 = () => {
     } else {
       fetchMovies();
     }
-    // Check if there is any value at all
-    // if (!inputValue.value){
-    //   window.alert("Please enter an email adress");
-    // } else {
 
-    // }
   }
 
-  // useEffect(() => {
-  //   let button = document.getElementById("subscribeButtonId")
-  //   button.addEventListener("click", () => {
-  //     fetchMovies()
-  //   });
-  // }, []);
+
 
   return (
     <div id="page07" className="pages">
