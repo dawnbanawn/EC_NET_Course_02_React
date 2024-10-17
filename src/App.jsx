@@ -10,9 +10,12 @@ import Page08 from './page08'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import Navbar from './navbar'
+import { useEffect } from 'react'
 
 import Contact from './Contact'
 function App() {
+
+
 
   return (
     <>
