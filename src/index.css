@@ -74,8 +74,11 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
 }
-#navFeatures p{
-  height: 10px;
+#navFeatures a{
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+
 }
 #rightNav{
   display: flex;
@@ -282,7 +285,7 @@ height: 10px;
 
 #page03{
   background-color: var(--blueBG);
-  width: 80vw;
+  width: 100vw;
 }
 #page03div{
   width: 100%;
@@ -411,7 +414,7 @@ margin-right: 10px;
   height: 600px;
   display: flex;
   align-items: center;
-  width: 80vw;
+  width: 100vw;
 
 }
 .page05card{
@@ -426,7 +429,8 @@ margin-right: 10px;
   height: 400px;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: 100%;
+  width: 80vw;
+
   margin: auto;
 
 }
@@ -701,4 +705,67 @@ width: 80vw;
 
 #navbar{
   z-index: 5;
+}
+
+/* page 09 */
+
+#page09{
+  width: 100%;
+  height: 100vh;
+
+}
+#page09div{
+  height: 80vh;
+  width: 100vw;
+  background-color: var(--blueBG);
+
+}
+#section01{
+  display: flex;
+}
+#section01Left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+#section01Right{
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+
+}
+#section01RightDiv{
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#section01container{
+  width: 80%;
+}
+#section01Left01{
+  display: flex;
+  align-items: center;
+}
+#section01Left01 p{
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* page 10 */
+
+#page10{
+  width: 100%;
+  height: 100vh;
+
+}
+#page10div{
+
+
 }

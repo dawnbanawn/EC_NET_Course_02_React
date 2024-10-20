@@ -8,6 +8,8 @@ import Page06 from './page06'
 import Page07 from './page07'
 import Page08 from './page08'
 import Page09 from './page09'
+import Page10 from './page10'
+
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
@@ -43,6 +45,7 @@ function App() {
       <Route path="/contact" element={
             <div className="main">
             <Page09 />
+            <Page10 />
       
           </div>} />
       </Routes>
