@@ -59,7 +59,7 @@ function buttonClick() {
 
 
   return (
-    <div id="page09" className="pages">
+    <div id="page09" >
       <div id="page09div">
         <div id="section01">
           <div id="section01Left">
@@ -84,7 +84,7 @@ function buttonClick() {
                     Please feel free to drop us a line. We will respond as soon
                     as possible.
                   </p>
-                  <div>
+                  <div className="oneRow">
                     <p>Leave a message</p>
                     <img src={blueArrow} alt="" />
                   </div>
@@ -100,7 +100,7 @@ function buttonClick() {
                     Please feel free to drop us a line. We will respond as soon
                     as possible.
                   </p>
-                  <div>
+                  <div className="oneRow">
                     <p>Send an application</p>
                     <img src={blueArrow} alt="" />
                   </div>
@@ -112,7 +112,8 @@ function buttonClick() {
 
           <div id="section01Right">
             <div id="section01RightDiv">
-              <h2>Get Online Consultation</h2>
+              <div id="section01RightDivContainer">
+              <h3>Get Online Consultation</h3>
               <form>
               <div className="form-group">
                 <label htmlFor="nameInput">Full name</label>
@@ -132,6 +133,7 @@ function buttonClick() {
               </select>
               <button id="button" type="button" onClick={() => buttonClick()} className="btn btn-primary">Submit</button>
               </form>
+            </div>
             </div>
           </div>
         </div>

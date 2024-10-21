@@ -46,6 +46,7 @@ function App() {
             <div className="main">
             <Page09 />
             <Page10 />
+            <Page08 />
       
           </div>} />
       </Routes>
